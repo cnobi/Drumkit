@@ -41,7 +41,7 @@ for ( var i=0; i < Length; i++ ) {
                 bass.play();
                 break; 
         
-            default:
+            default: console.log(clickedButton)
                 break;
         }
 
