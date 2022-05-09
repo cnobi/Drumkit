@@ -5,7 +5,26 @@ for ( var i=0; i < Length; i++ ) {
         
         var clickedButton = this.innerHTML;
 
-        switch (clickedButton) {
+        makeSound(clickedButton);
+
+        
+
+        
+    });
+
+}
+
+
+document.addEventListener("keydown", function(e) {
+        
+         makeSound(e.key);
+
+        });
+
+
+function makeSound(key) {
+        
+        switch (key) {
             case "w":
                 var tom1 = new Audio('sounds/tom-1.mp3');
                 tom1.play();
@@ -44,11 +63,7 @@ for ( var i=0; i < Length; i++ ) {
             default: console.log(clickedButton)
                 break;
         }
-
-        
-    });
-
-}
+    }
 
 
  
